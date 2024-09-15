@@ -1,7 +1,7 @@
 module test;
   reg reset = 0;
   initial begin
-    $dumpfile("test.vcd");
+    $dumpfile("./exe/test.vcd");
     $dumpvars(0,test);
 
     # 17 reset = 1;

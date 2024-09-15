@@ -1,5 +1,4 @@
-module add_beh_sim(
-);
+module add_beh_sim();
   reg[2:0] in0_tb;
   reg[2:0] in1_tb;
 
@@ -8,11 +7,15 @@ module add_beh_sim(
 
   add uut(.in0(in0_tb), .in1(in1_tb), .out(out_tb), .carry(carry_tb));
 
-
   initial begin
-  in0_tb = 3'b000;
-  in1_tb = 3'b001;
-  #100;
+    in0_tb = 3'b000;
+    in1_tb = 3'b001;
+    #100;
   end
 
+  initial begin
+    #100 
+    $display("Result: %d", out_tb);
+    $finish;
+  end
 endmodule

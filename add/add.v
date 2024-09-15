@@ -1,7 +1,7 @@
 module add(
   input [2:0] in0,
   input [2:0] in1,
-  input [2:0] out,
+  output [2:0] out,
   output carry
 );
 
