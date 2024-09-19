@@ -7,3 +7,5 @@ module boolean_function(input a, input b, input c, output z);
   assign q = ~a & c;
   assign z = p | q;
 endmodule
+
+
